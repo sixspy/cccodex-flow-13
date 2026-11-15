@@ -37,4 +37,36 @@ label { display:block; margin:.7rem 0; }
 input { width:100%; margin-top:.3rem; padding:.5rem .65rem; border:1px solid var(--line); border-radius:8px; }
 .err { color:#b91c1c; min-height:1.2rem; }
 .hint { color:#3f6b63; }
-@media (max-width: 800px) { .layout { grid-template-columns: 1fr; } }
+.two-col { display:grid; grid-template-columns: 1fr 1fr; gap:.8rem; }
+.card { background:#fff; border:1px solid var(--line); border-radius:10px; padding:.9rem 1rem; margin:.7rem 0; }
+.card h3 { margin:.1rem 0 .6rem; font-size:1rem; }
+.card .sub { font-weight:400; font-size:.78rem; color:#3f6b63; }
+.kv { margin:.35rem 0; font-size:.9rem; }
+.small { font-size:.78rem; word-break:break-all; }
+.dep-table { width:100%; border-collapse:collapse; font-size:.85rem; }
+.dep-table th, .dep-table td { text-align:left; padding:.4rem .5rem; border-bottom:1px solid var(--line); }
+.gate { display:inline-block; padding:.1rem .5rem; border-radius:999px; font-size:.78rem; }
+.gate-ok { background:#d7efe8; color:#0f766e; }
+.gate-bad { background:#fde2e2; color:#b91c1c; }
+.gate-hold { background:#fdf0d5; color:#9a6700; }
+.chip.tone-run { background:#cde7ff; color:#1d4ed8; }
+.chip.tone-hold { background:#fdf0d5; color:#9a6700; }
+.chip.tone-bad { background:#fde2e2; color:#b91c1c; }
+.chip.tone-ok { background:#d7efe8; color:#0f766e; }
+.reason { color:#b91c1c; background:#fdecec; border:1px solid #f3c7c7; border-radius:8px; padding:.5rem .65rem; font-size:.85rem; margin:.5rem 0; }
+.reason.ok-line, .banner-ok { color:#0f766e; background:#d7efe8; border-color:#9fd3c6; }
+.banner-bad { font-weight:600; }
+.gate-card { border-style:dashed; }
+.tone-hold-bg { background:#fffaf0; }
+.field { margin:.5rem 0; display:block; }
+.check { display:flex; align-items:center; gap:.4rem; margin:.35rem 0; font-size:.88rem; }
+.check input { width:auto; margin:0; }
+.check-grid { display:grid; grid-template-columns: 1fr 1fr; gap:.2rem 1rem; margin:.5rem 0; }
+.policy-row { margin:.6rem 0; border-top:1px dashed var(--line); padding-top:.6rem; }
+.confirm-list { margin:0; padding-left:1.1rem; display:grid; gap:.5rem; font-size:.85rem; }
+button:disabled { opacity:.55; cursor:not-allowed; }
+@media (max-width: 800px) {
+  .layout { grid-template-columns: 1fr; }
+  .two-col { grid-template-columns: 1fr; }
+  .check-grid { grid-template-columns: 1fr; }
+}
